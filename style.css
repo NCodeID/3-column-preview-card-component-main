@@ -1,0 +1,114 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan:hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --Gray: hsl(0,0%,95%);
+  --font-primary : "Big Shoulders Display", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: relative;
+    height: 550px;
+    width: 350px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: red;
+    color: #fff;
+}
+.box1{
+    background-color: var(--Bright-orange);
+    border-radius: 5px 0px 0px 5px;
+
+}
+.box2 {
+    background-color: var(--Dark-cyan);
+}
+.box2 p{
+    text-align: left;
+}
+.box3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 5px 5px 0px;
+}
+h1{
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+}
+p{
+    font-family: var(--font-secondary);
+    color: var(--white);
+    line-height: 2em;
+    padding-right: 40px;
+}
+button{
+    mix-blend-mode: screen;
+    border: 1px solid var(--Gray);
+    font-family: var(--font-secondary);
+    font-weight:bold;
+    background-color: var(--Gray);
+    padding: 15px 30px;
+    border-radius: 25px;
+    bottom: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+footer{
+    position: absolute;
+    color: #000;
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+a{
+    color: #0000ee;
+}
+
+
+@media only Screen and (max-width: 789px){
+    main{
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    p{
+        padding-right: 15px;
+    }
+    .box{
+        height: 500px;
+        margin: 0px 10px;
+        overflow: hidden;
+    }
+    .box1{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .box3{
+        border-radius: 0px 0px 5px 5px;
+    }
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+}
