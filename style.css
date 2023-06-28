@@ -32,7 +32,7 @@ main{
 }
 .box1{
     background-color: var(--Bright-orange);
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 10px 0px 0px 10px;
 
 }
 .box2 {
@@ -43,7 +43,7 @@ main{
 }
 .box3{
     background-color: var(--Very-dark-cyan);
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 h1{
     font-family: var(--font-primary);
@@ -102,10 +102,10 @@ a{
         overflow: hidden;
     }
     .box1{
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
     }
     .box3{
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 10px 10px;
     }
     footer{
         position: relative;
